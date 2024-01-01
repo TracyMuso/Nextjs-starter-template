@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align=center>
+
+<!-- [![ntl-badge]][ntl-link] ![views] ![stars] ![forks] ![issues] ![license] ![repo-size] -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="public/nextjs-light.svg">
+  <source media="(prefers-color-scheme: light)" srcset="public/nextjs-dark.svg">
+  <img alt="Next.js">
+</picture>
+
+# Next.js Starter Template
+
+### A Minimal Next.js Starter Template with TypeScript, Tailwind CSS, and pre-configured with ESLint, Prettier, and Husky.
+
+</div>
+
+## Features
+
+- ⚡ **[Next.js](https://nextjs.org/)** - A React Framework for Production
+- 🔥 **[App Router](https://nextjs.org/docs/app)** - It is a new paradigm for building applications using React's latest features.
+- 🎨 **[Tailwind CSS](https://tailwindcss.com/)** - A Utility-First CSS Framework for Rapid UI Development
+- 📦 **[TypeScript](https://www.typescriptlang.org/)** - A typed superset of JavaScript that compiles to plain JavaScript
+- 📝 **[ESLint](https://eslint.org/)** - The pluggable linting utility for JavaScript and JSX
+- 🛠 **[Prettier](https://prettier.io/)** - An opinionated code formatter
+- 🐶 **[Husky](https://typicode.github.io/husky/#/)** - A tool that makes Git hooks easy
+- 🚫 **[lint-staged](https://github.com/okonet/lint-staged)** - Run linters against staged git files
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun create next-app -e "https://github.com/TracyMuso/Nextjs-starter-template" <project-name>
+
+npx create-next-app -e "https://github.com/TracyMuso/Nextjs-starter-template" <project-name>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center" style="font-weight: bold;">OR</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Install `degit` globally**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+bun i -g degit || pnpm i -g degit || yarn global add degit || npm i -g degit
+```
 
-## Learn More
+**Create a new project from this template**
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+degit rajput-hemant/nextjs-template <project-name>
+cd <project-name>
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Install dependencies**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+bun i || pnpm i || yarn || npm i
+```
 
-## Deploy on Vercel
+**Initialize a new git repository _(Optional)_:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git init
+git add .
+git commit --no-verify -m "init"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Available Scripts
+
+In the project directory, you can run:
+
+| **Script**     | **Description**                                      |
+| -------------- | ---------------------------------------------------- |
+| `dev`          | Runs the app in the development mode.                |
+| `build`        | Builds the app for production to the `.next` folder. |
+| `start`        | Runs the built app in the production mode.           |
+| `lint`         | Runs next lint on the project.                       |
+| `check-types`  | Runs TypeScript type checker.                        |
+| `format`       | Formats the code with Prettier.                      |
+| `check-format` | Checks if the code is formatted with Prettier.       |
+| `prepare`      | Installs husky git hooks.                            |
+
+## After Installation Checklist
+
+- [ ] Update `package.json` with your project details.
+- [ ] Update `README.md` with your project details.
+- [ ] Update `LICENSE` with your name and year.
+
+## Switching Package Manager
+
+This template uses [yarn](https://yarnpkg.com/cli/install) as the default package manager. If you want to use `pnpm`, `npm` or `bun`, you need to remove the `yarn.lock` file and run `pnpm i`, `npm i` or `bun i` to generate the lock file for the respective package manager.
+
+<!-- ## Deployments
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/rajput-hemant/nextjs-template)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rajput-hemant/nextjs-template) -->
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+<!-- ## Contributors:
+
+<div align=center>
+
+[![][contributors]][contributors-graph]
+
+_Note: It may take up to 24h for the [contrib.rocks][contrib-rocks] plugin to update because it's refreshed once a day._
+
+</div> -->
+
+<!----------------------------------{ Labels }--------------------------------->
+<!--
+[views]: https://komarev.com/ghpvc/?username=nextjs-template&label=view%20counter&color=red&style=flat
+[repo-size]: https://img.shields.io/github/repo-size/TracyMuso/nextjs-template
+[issues]: https://img.shields.io/github/issues-raw/rajput-hemant/nextjs-template
+[license]: https://img.shields.io/github/license/rajput-hemant/nextjs-template
+[forks]: https://img.shields.io/github/forks/rajput-hemant/nextjs-template?style=flat
+[stars]: https://img.shields.io/github/stars/rajput-hemant/nextjs-template
+[contributors]: https://contrib.rocks/image?repo=rajput-hemant/nextjs-template&max=500
+[contributors-graph]: https://github.com/rajput-hemant/nextjs-template/graphs/contributors
+[contrib-rocks]: https://contrib.rocks/preview?repo=rajput-hemant%2Fnextjs-template
+[ntl-badge]: https://api.netlify.com/api/v1/badges/6955f80c-0747-4947-a344-e7c647012cbe/deploy-status
+[ntl-link]: https://app.netlify.com/sites/react-template-vite/deploys -->
